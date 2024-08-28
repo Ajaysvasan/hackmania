@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<form id="myForm" action="">
+  First name: <input type="text" name="fname" value="Donald"><br>
+  Last name: <input type="text" name="lname" value="Duck"><br>
+  <input type="submit" value="Submit">
+</form> 
+
+<p>Click the "Try it" button to display the value of the element with name="fname" in the form.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  const x = document.getElementById("myForm").elements.namedItem("fname").value;
+  console.log("form value",x);
+  document.getElementById("demo").innerHTML = x;
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workout Gallery</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #fff;
+        }
+        .container {
+            min-height: 100%;
+            background-image: url('/placeholder.svg?height=1080&width=1920');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .overlay {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .item {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+        .item:hover {
+            transform: scale(1.05);
+        }
+        .item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .item iframe {
+            width: 100%;
+            height: 200px;
+            border: none;
+        }
+        .item-content {
+            padding: 15px;
+        }
+        .item h2 {
+            margin-top: 0;
+        }
+        .item a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        .item a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="overlay">
+            <h1>Workout Gallery</h1>
+            <div class="gallery">
+                <div class="item">
+                    <iframe src="https://www.youtube.com/embed/ml6cT4AZdqI" allowfullscreen></iframe>
+                    <div class="item-content">
+                        <h2>Full Body HIIT</h2>
+                        <p>30-minute high-intensity interval training for full body workout.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="/placeholder.svg?height=200&width=300" alt="Yoga poses">
+                    <div class="item-content">
+                        <h2>Yoga for Beginners</h2>
+                        <p>Start your yoga journey with these beginner-friendly poses.</p>
+                        <a href="#">Explore poses</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <iframe src="https://www.youtube.com/embed/gC_L9qAHVJ8" allowfullscreen></iframe>
+                    <div class="item-content">
+                        <h2>Strength Training</h2>
+                        <p>Build muscle and increase strength with this workout routine.</p>
+                        <a href="#">View exercises</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="/placeholder.svg?height=200&width=300" alt="Running trail">
+                    <div class="item-content">
+                        <h2>Outdoor Running</h2>
+                        <p>Discover the best trails and tips for outdoor running.</p>
+                        <a href="#">Find trails</a>
+                    </div>
+                </div>
+                
+                <div class="item">
+                    <img src="/placeholder.svg?height=200&width=300" alt="Healthy meal prep">
+                    <div class="item-content">
+                        <h2>Nutrition Tips</h2>
+                        <p>Learn about proper nutrition to support your workout routine.</p>
+                        <a href="#">Read more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

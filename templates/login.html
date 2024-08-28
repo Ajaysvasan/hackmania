@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Login Page with Fitness Background</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+            background: url('https://www.google.com/search?q=gym+images&sca_esv=ad1fe64d584e8890&sca_upv=1&rlz=1C1SLLM_enIN1112IN1112&udm=2&biw=1536&bih=730&sxsrf=ADLYWIJlCCPwnEefgnx4lFYgvTcPxgKE4g%3A1724832239139&ei=79nOZsuVCNzx4-EP7-XgqAY&ved=0ahUKEwiLyaTnnJeIAxXc-DgGHe8yGGUQ4dUDCBE&uact=5&oq=gym+images&gs_lp=Egxnd3Mtd2l6LXNlcnAiCmd5bSBpbWFnZXMyCBAAGIAEGLEDMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAESKIOUL8DWJ4NcAF4AJABAJgByAKgAYgHqgEHNS4xLjAuMbgBA8gBAPgBAZgCCKACugfCAhAQABiABBixAxhDGIMBGIoFwgIGEAAYBxgewgIHEAAYgAQYGMICChAAGIAEGEMYigXCAg0QABiABBixAxhDGIoFwgILEAAYgAQYsQMYgwGYAwCIBgGSBwc1LjIuMC4xoAexJQ&sclient=gws-wiz-serp#vhid=2wNgCUeYjQtwmM&vssid=mosaic') no-repeat center center fixed;
+            background-size: cover;
+            transition: background-position 0.1s;
+        }
+
+        .login-container {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 400px;
+            backdrop-filter: blur(10px);
+        }
+
+        .login-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .login-container input {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+
+        .login-container input:focus {
+            border-color: #48c6ef;
+            box-shadow: 0 0 5px rgba(72, 198, 239, 0.5);
+            outline: none;
+        }
+
+        .login-container button {
+            width: 100%;
+            padding: 12px;
+            background-color: #48c6ef;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .login-container button:hover {
+            background-color: #6f86d6;
+        }
+
+        .login-container p {
+            text-align: center;
+            margin-top: 15px;
+            color: #666;
+        }
+
+        .login-container p a {
+            color: #48c6ef;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .login-container p a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 480px) {
+            .login-container {
+                padding: 20px;
+            }
+
+            .login-container h2 {
+                font-size: 24px;
+            }
+
+            .login-container button {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-container">
+        <h2>Login</h2>
+        <form id="login-form">
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+        <p>Don't have an account? <a href="/register">Register here</a></p>
+    </div>
+
+    <script>
+        // JavaScript to handle form submission
+        document.getElementById('login-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            // Get input values
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            // Log values to the console (simulate passing to backend)
+            console.log('Username:', username);
+            console.log('Password:', password);
+
+            // Example: Pass values to a function or make an AJAX call
+            // Here you can add code to send these values to your backend server
+        });
+
+        // Cursor movement effect
+        document.body.addEventListener('mousemove', function(e) {
+            const x = e.clientX / window.innerWidth;
+            const y = e.clientY / window.innerHeight;
+            document.body.style.backgroundPosition = `${x * 50}% ${y * 50}%`;
+        });
+    </script>
+
+</body>
+</html>

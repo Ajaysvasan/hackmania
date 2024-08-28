@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Individual Workout Ideas</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        .container {
+            min-height: 100%;
+            background-image: url('/placeholder.svg?height=1080&width=1920');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .overlay {
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+        }
+        .workout-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .workout-card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+        .workout-card:hover {
+            transform: translateY(-5px);
+        }
+        .workout-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .workout-card iframe {
+            width: 100%;
+            height: 200px;
+            border: none;
+        }
+        .workout-content {
+            padding: 15px;
+        }
+        .workout-content h2 {
+            color: #333;
+            margin-top: 0;
+        }
+        .workout-content p {
+            color: #666;
+            margin-bottom: 10px;
+        }
+        .workout-content ul {
+            color: #666;
+            padding-left: 20px;
+        }
+        .workout-content a {
+            display: inline-block;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            margin-top: 10px;
+            transition: background-color 0.3s ease;
+        }
+        .workout-content a:hover {
+            background-color: #45a049;
+        }
+        @media (max-width: 768px) {
+            .workout-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="overlay">
+            <h1>Individual Workout Ideas</h1>
+            <div class="workout-grid">
+                <div class="workout-card">
+                    <img src="/placeholder.svg?height=200&width=300" alt="Person doing push-ups">
+                    <div class="workout-content">
+                        <h2>High-Intensity Interval Training (HIIT)</h2>
+                        <p>Boost your metabolism and burn fat with this intense workout routine.</p>
+                        <ul>
+                            <li>30 seconds of burpees</li>
+                            <li>30 seconds of mountain climbers</li>
+                            <li>30 seconds of jump squats</li>
+                            <li>30 seconds of rest</li>
+                            <li>Repeat 4 times</li>
+                        </ul>
+                        <a href="#" aria-label="Learn more about HIIT workouts">Learn More</a>
+                    </div>
+                </div>
+                <div class="workout-card">
+                    <iframe src="https://www.youtube.com/embed/ml6cT4AZdqI" allowfullscreen title="Yoga for Beginners Video"></iframe>
+                    <div class="workout-content">
+                        <h2>Yoga for Beginners</h2>
+                        <p>Improve flexibility and reduce stress with this beginner-friendly yoga routine.</p>
+                        <ul>
+                            <li>Mountain Pose</li>
+                            <li>Downward Facing Dog</li>
+                            <li>Warrior I and II</li>
+                            <li>Child's Pose</li>
+                        </ul>
+                        <a href="#" aria-label="Explore more yoga poses">Explore Poses</a>
+                    </div>
+                </div>
+                <div class="workout-card">
+                    <img src="/placeholder.svg?height=200&width=300" alt="Person lifting weights">
+                    <div class="workout-content">
+                        <h2>Strength Training</h2>
+                        <p>Build muscle and increase strength with this workout routine.</p>
+                        <ul>
+                            <li>3 sets of 10 squats</li>
+                            <li>3 sets of 10 push-ups</li>
+                            <li>3 sets of 10 lunges (each leg)</li>
+                            <li>3 sets of 10 dumbbell rows</li>
+                        </ul>
+                        <a href="#" aria-label="View more strength training exercises">View Exercises</a>
+                    </div>
+                </div>
+                
+                </div>
+                <div class="workout-card">
+                    <img src="/placeholder.svg?height=200&width=300" alt="Person running outdoors">
+                    <div class="workout-content">
+                        <h2>Outdoor Running</h2>
+                        <p>Improve cardiovascular health with this running workout plan.</p>
+                        <ul>
+                            <li>5-minute warm-up walk</li>
+                            <li>20-minute jog at moderate pace</li>
+                            <li>5 x 30-second sprints with 1-minute rest</li>
+                            <li>5-minute cool-down walk</li>
+                        </ul>
+                        <a href="#" aria-label="Discover running tips and routes">Find Routes</a>
+                    </div>
+                </div>
+                <div class="workout-card">
+                    <iframe src="https://www.youtube.com/embed/gC_L9qAHVJ8" allowfullscreen title="Bodyweight Workout Video"></iframe>
+                    <div class="workout-content">
+                        <h2>Bodyweight Workout</h2>
+                        <p>No equipment needed for this full-body workout you can do anywhere.</p>
+                        <ul>
+                            <li>20 jumping jacks</li>
+                            <li>15 bodyweight squats</li>
+                            <li>10 push-ups</li>
+                            <li>30-second plank</li>
+                            <li>Repeat 3 times</li>
+                        </ul>
+                        <a href="#" aria-label="Explore more bodyweight exercises">Explore More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

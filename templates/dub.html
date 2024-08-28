@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Dashboard</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #1a1a1a;
+            color: #ffffff;
+        }
+        .dashboard {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .dashboard-item {
+            background-color: #2a2a2a;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 10px 0;
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .dashboard-item:hover {
+            transform: translateY(-5px);
+        }
+        .avatar {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: #3a3a3a;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 10px;
+            font-size: 40px;
+        }
+        .quote {
+            font-style: italic;
+            font-size: 1.2em;
+            margin-top: 20px;
+            text-align: center;
+            color: #ffd700;
+        }
+        a{
+            text-decoration: none;
+        }   
+    </style>
+</head>
+<body>
+    <main class="dashboard">
+        <section class="dashboard-item" aria-label="Profile">
+            <div class="avatar" aria-hidden="true">👤</div>
+            <a href="/profile" class="cta-button">
+            <h2>PROFILE/AVATAR</h2></a>
+        </section>
+        
+        <section class="dashboard-item" aria-label="Workouts">
+            <a href="/work" class="cta-button">
+            <h2>WORKOUTS</h2></a>
+            <p>Access your personalized workout plans here.</p>
+        </section>
+        
+        <section class="dashboard-item" aria-label="Challenges">
+            <a href="/challenge" class="cta-button">
+            <h2>CHALLENGES</h2></a>
+            <p>View and participate in fitness challenges.</p>
+        </section>
+        
+        <section class="dashboard-item" aria-label="Social Feeds">
+            <a href="/social" class="cta-button">
+            <h2>SOCIAL FEEDS</h2></a>
+            <p>Connect with friends and share your fitness journey.</p>
+        </section>
+        
+        <section class="dashboard-item" aria-label="Rewards" >
+            <a href="/reward"><h2>REWARDS</h2></a>
+            <p>Check your earned rewards and achievements.</p>
+        </section>
+        
+        <p class="quote" aria-label="Motivational Quote">Sweat now! Shine later!</p>
+    </main>
+</body>
+</html>

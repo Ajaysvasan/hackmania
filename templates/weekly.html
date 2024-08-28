@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7-Day Workout Challenge</title>
+    <style>
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .challenge-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .challenge-day {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 20px;
+            text-align: center;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .challenge-day:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .day-number {
+            font-size: 1.8rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #FFD700;
+        }
+
+        .workout {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 600px) {
+            .challenge-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>7-Day Workout Challenge</h1>
+        <div class="challenge-grid">
+            <div class="challenge-day">
+                <div class="day-number">Day 1</div>
+                <div class="workout">
+                    20 Push-ups<br>
+                    30 Squats<br>
+                    1 minute Plank
+                </div>
+            </div>
+            <div class="challenge-day">
+                <div class="day-number">Day 2</div>
+                <div class="workout">
+                    15 Burpees<br>
+                    40 Lunges<br>
+                    20 Mountain Climbers
+                </div>
+            </div>
+            <div class="challenge-day">
+                <div class="day-number">Day 3</div>
+                <div class="workout">
+                    25 Jumping Jacks<br>
+                    15 Tricep Dips<br>
+                    30-second Wall Sit
+                </div>
+            </div>
+            <div class="challenge-day">
+                <div class="day-number">Day 4</div>
+                <div class="workout">
+                    Rest Day<br>
+                    Light Stretching<br>
+                    10-minute Walk
+                </div>
+            </div>
+            <div class="challenge-day">
+                <div class="day-number">Day 5</div>
+                <div class="workout">
+                    30 Crunches<br>
+                    20 Jump Squats<br>
+                    15 Push-ups
+                </div>
+            </div>
+            <div class="challenge-day">
+                <div class="day-number">Day 6</div>
+                <div class="workout">
+                    1-minute High Knees<br>
+                    20 Leg Raises<br>
+                    15 Bicycle Crunches
+                </div>
+            </div>
+            <div class="challenge-day">
+                <div class="day-number">Day 7</div>
+                <div class="workout">
+                    25 Russian Twists<br>
+                    30-second Plank<br>
+                    20 Bodyweight Squats
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

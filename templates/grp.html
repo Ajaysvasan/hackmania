@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group Workout Ideas</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        .container {
+            min-height: 100%;
+            background-image: url('/placeholder.svg?height=1080&width=1920');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .overlay {
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 30px;
+            font-size: 2.5rem;
+        }
+        .workout-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .workout-card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+        .workout-card:hover {
+            transform: translateY(-5px);
+        }
+        .workout-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .workout-card iframe {
+            width: 100%;
+            height: 200px;
+            border: none;
+        }
+        .workout-content {
+            padding: 20px;
+        }
+        .workout-content h2 {
+            color: #2c3e50;
+            margin-top: 0;
+            font-size: 1.5rem;
+        }
+        .workout-content p {
+            color: #34495e;
+            margin-bottom: 15px;
+        }
+        .workout-content ul {
+            color: #34495e;
+            padding-left: 20px;
+            margin-bottom: 15px;
+        }
+        .workout-content a {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .workout-content a:hover {
+            background-color: #2980b9;
+        }
+        @media (max-width: 768px) {
+            .workout-grid {
+                grid-template-columns: 1fr;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="overlay">
+            <h1>Energizing Group Workout Ideas</h1>
+            <div class="workout-grid">
+                <div class="workout-card">
+                    <img src="/placeholder.svg?height=200&width=300" alt="Group of people doing outdoor bootcamp exercises">
+                    <div class="workout-content">
+                        <h2>Outdoor Bootcamp</h2>
+                        <p>Challenge your group with this high-energy outdoor bootcamp workout.</p>
+                        <ul>
+                            <li>Partner push-ups</li>
+                            <li>Group plank challenge</li>
+                            <li>Relay races</li>
+                            <li>Team burpee contest</li>
+                        </ul>
+                        <a href="#" aria-label="Learn more about outdoor bootcamp workouts">Explore Bootcamp</a>
+                    </div>
+                </div>
+               
+                </div>
+                <div class="workout-card">
+                    <img src="/placeholder.svg?height=200&width=300" alt="Group yoga session in a park">
+                    <div class="workout-content">
+                        <h2>Group Yoga in the Park</h2>
+                        <p>Connect with nature and your community through this group yoga session.</p>
+                        <ul>
+                            <li>Sun salutations</li>
+                            <li>Partner yoga poses</li>
+                            <li>Group balance challenges</li>
+                            <li>Guided meditation</li>
+                        </ul>
+                        <a href="#" aria-label="Find group yoga sessions near you">Find Sessions</a>
+                    </div>
+                </div>
+                <div class="workout-card">
+                    <iframe src="https://www.youtube.com/embed/gC_L9qAHVJ8" allowfullscreen title="Group HIIT Workout Video"></iframe>
+                    <div class="workout-content">
+                        <h2>Team HIIT Challenge</h2>
+                        <p>Push your limits with this high-intensity interval training workout for groups.</p>
+                        <ul>
+                            <li>Circuit training stations</li>
+                            <li>Partner resistance exercises</li>
+                            <li>Group sprints and agility drills</li>
+                            <li>Team endurance challenges</li>
+                        </ul>
+                        <a href="#" aria-label="Get HIIT workout plans for groups">Get Workout Plans</a>
+                    </div>
+                </div>
+                <div class="workout-card">
+                    <img src="/placeholder.svg?height=200&width=300" alt="Group cycling class">
+                    <div class="workout-content">
+                        <h2>Spin Class Extravaganza</h2>
+                        <p>Ride together in this high-energy, music-driven indoor cycling session.</p>
+                        <ul>
+                            <li>Interval sprints</li>
+                            <li>Hill climbs</li>
+                            <li>Team pace lines</li>
+                            <li>Rhythm-based choreography</li>
+                        </ul>
+                        <a href="#" aria-label="Book a group spin class">Book a Class</a>
+                    </div>
+                </div>
+                <div class="workout-card">
+                    <iframe src="https://www.youtube.com/embed/ml6cT4AZdqI" allowfullscreen title="Group Strength Training Video"></iframe>
+                    <div class="workout-content">
+                        <h2>Group Strength Training</h2>
+                        <p>Build muscle and camaraderie with this group-focused strength workout.</p>
+                        <ul>
+                            <li>Partner deadlifts</li>
+                            <li>Medicine ball passes</li>
+                            <li>Group plank holds</li>
+                            <li>Team weightlifting challenges</li>
+                        </ul>
+                        <a href="#" aria-label="Discover group strength training techniques">Discover Techniques</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

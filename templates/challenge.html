@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Challenges</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            height: 100%;
+        }
+        .container {
+            background-image: url('https://source.unsplash.com/1600x900/?fitness');
+            background-size: cover;
+            background-position: center;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+        .overlay {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        h1 {
+            margin-bottom: 30px;
+        }
+        .horizontal-options, .vertical-options {
+            display: flex;
+            margin-bottom: 20px;
+        }
+        .horizontal-options {
+            flex-direction: row;
+        }
+        .vertical-options {
+            flex-direction: column;
+        }
+        .option {
+            background-color: rgba(255, 255, 255, 0.2);
+            border: 2px solid white;
+            border-radius: 5px;
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .option:hover {
+            background-color: rgba(255, 255, 255, 0.4);
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <div class="overlay">
+            <h1> Fitness Challenge</h1>
+            
+            <section aria-labelledby="challenge-type">
+                <h2 id="challenge-type">Challenge Type</h2>
+                <div class="horizontal-options">
+                    <div class="option" role="button" tabindex="0"><a href="individual.html">Individual Challenges</a></div>
+                    <div class="option" role="button" tabindex="0">Group Challenges<a href="grp.html"></div>
+                </div>
+            </section>
+            
+            <section aria-labelledby="challenge-duration">
+                <h2 id="challenge-duration">Challenge Duration</h2>
+                <div class="vertical-options">
+                    <div class="option" role="button" tabindex="0"><a href="monthly.html">Monthly Challenges</a></div>
+                    <div class="option" role="button" tabindex="0"><a href="weekly.html">Weekly Challenges</a></div>
+                    <div class="option" role="button" tabindex="0"><a href="daily.html">Daily Challenges</a></div>
+                </div>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
